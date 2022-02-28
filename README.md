@@ -74,7 +74,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 
 Nous avons le plaisir de vous présenter notre projet fil rouge, construit au fur et a mesure de notre formatio nde 57 jours sur le big data et le BI.
 
@@ -225,4 +227,4 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-url]: https://github.com/LaCoolClass-INTI/AlloBobo/issues
 [license-shield]: https://img.shields.io/github/license/LaCoolClass-INTI/AlloBobo?style=for-the-badge
 [license-url]: https://github.com/LaCoolClass-INTI/AlloBobo/LICENSE.txt
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/screenshot.PNG
