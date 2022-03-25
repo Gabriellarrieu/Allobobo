@@ -1,60 +1,156 @@
 <html>
     <head>
        <meta charset="utf-8">
+       <title>AlloBobo</title> 
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href= "AlloBobo.css">
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
     </head>
     <body>
 	
 	
 	<!-- Titre 1 -->
-   <center> <h1>Bienvenue sur AlloBobo !</h1> </center>
+    <center> <div class="box">
+	
+	    <h1 class="title" >Bienvenue sur AlloBobo !</h1> 
+	</div> </center> 
+  
 
    <br />
 <br />
 
+    <!--images_fleur-->
 
-       <!-- button -->
-	    <center>
-	   <button type="submit"> <a href="acceuil.html">Acceuil</a> </p> </button>
-       <button type="submit"> <a href="Qui nous sommes.html">Qui nous sommes</a> </p> </button>	
-       <button type="submit"> <a href="Nos solutions.html">Nos solutions</a> </p> </button> 	
-       <button type="submit"> <a href="F.A.Q.html">F.A.Q</a> </p> </button> 
-	   <button type="submit"> <a href="Contact.html">Contact</a> </p> </button>
-	   </center>  
- 
-	   <br />
-	   <br />
-	   <br />
-       <br />
-	
-		
-	
+    <img class="img1-1" src="fleur_endroit.png"  >
+    <img class="img2-1" src="fleur_envers.png" >
+
+
+    <!-- button -->
+    <center>
+    <div class="block">
+           <button class="button is-outlined"> <a href="/Qui nous sommes">Qui nous sommes</a> </button>
+            <button class="button is-outlined"> <a href="/Nos solutions">Nos solutions</a>  </button> 	
+            <button class="button is-outlined"> <a href="/Nos offres">Nos offres</a>  </button> 
+            <button class="button is-outlined"> <a href="/F.A.Q">F.A.Q</a>  </button> 
+            <button class="button is-outlined"> <a href="/Contact">Contact</a>  </button>
+            <button class="button is-outlined"> <a href="/index">Accueil</a>  </button>
+    </div>
+    </center>  
+     
+    <br />
+    <br />
+    <br />
+    <br />
 	
 	<!-- zone de connexion -->
-        <div id="container">
-         
-            
-            <form action="verification.php" method="POST">
-			
-                <h2>Connexion</h2>
-                
-                <label><b>Nom d'utilisateur</b></label>
-                <input type="email" placeholder="Entrer le nom d'utilisateur" name="username" required>
 
-                <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
-
-                <input type="submit" id='submit' value='LOGIN' >
-                <?php
-                if(isset($_GET['erreur'])){
-                    $err = $_GET['erreur'];
-                    if($err==1 || $err==2)
-                        echo '<p style='color:red'>utilisateur ou mot de passe incorrect</p>
+    <!--Colonnes-->
+   
+    <div class="block">
+        <div class="container">
+        
+                <div class="box3">
              
-            </form>
-        </div>
+                    <form action="verification.php" method="POST">
+			
+                        <center><h2>Je suis: UN PARTICULIER </h2></center>
+                        </br>
+                            <div class="box3-1">
+                               <center><h3>J'ai déjà un compte AlloBobo</h3></center> 
+                                </br>
+                                <label><b>Nom d'utilisateur</b></label>
+                                <input type="email" placeholder="" name="username" required>
+                                <br/>
+                                </br>
+                                <label><b>Mot de passe</b></label>
+                                <input type="password" placeholder="" name="password" required>
+                                <br/>
+                                </br>
+                                <center><input class="login" type="submit" id='submit' value='Se Connecter' ></center>
+                                <br/>
+                                <center><text type="submit" class="mdp"> <a href="/Mot-de-passe-oublié">Mot de passe oublié ?</a> </text></center>
+                             </div>
+                             </br>
+                             <div class="box3-2">
+                                <center><h3>Bienvenue sur AlloBobo !</h3></center> 
+                                </br>
+                                <center><button class="inscription" type="submit"> <a href="/inscription">S'inscrire</a> </button></center>
+                            </div>
+                    </form>
+                </div>
+                
+
+
+                <div class="box2">
+              
+               
+                    
+                    <form action="verification.php" method="POST">
+			
+                    <center><h2>Je suis: UN PROFESSIONEL</h2></center>
+                    </br>
+                        <div class="box2-1">
+                            <center><h3>J'ai déjà un compte AlloBobo</h3></center>
+                            </br>
+                            <label><b>Nom d'utilisateur</b></label>
+                            <input type="email" placeholder="" name="username" required>
+                            <br/>
+                            </br>
+                            <label><b>Mot de passe</b></label>
+                            <input type="password" placeholder="" name="password" required>
+                            <br/>
+                            </br>
+                            <center><input class="login" type="submit" id='submit' value='Se connecter' ></center>
+                            <br/>
+                            <center><text type="submit" class="mdp"> <a href="/Mot-de-passe-(Professionel de Santé)">Mot de passe oublié ?</a> </text></center>
+                        </div>
+                        </br>
+                        <div class="box2-2">
+                            <center><h3>Bienvenue sur AlloBobo !</h3></center> 
+                            </br>
+                            <center><button class="inscription" type="submit"> <a href="/inscription-medecin">S'inscrire</a> </button> </center>
+                        </div>
+             
+                    </form>
+                </div>
+                
 		
-		<button type="submit"> <a href="inscription.html">inscription</a> </p> </button> 
+		
+                </div>
+
+            </div>
+        </div>
+    </div>
+     
+    	<!-- bas de page-->  
+	
+	<br />
+	<br />
+	<br />
+
+<center>  
+<div> 
+
+
+	<button type="submit" class="unstyled-button"> <a href="/RGPD">RGPD</a> </p> </button>
+	<button type="submit" class="unstyled-button"> <a href="/À propos de AlloBobo">À propos de AlloBobo</a> </p> </button>
+	<button type="submit" class="unstyled-button"> <a href="/Pour les professionnels de santé">Pour les professionnels de santé</a> </p> </button> 
+	<button type="submit" class="unstyled-button"> <a href="/Condition générale d'utilisation">Condition générale d'utilisation </p> </button>
+
+	
+</div>
+</center> 
+	   
+
+	
+	<br />
+	<br />
+	<br />
+    <br />
+           
+
+
     </body>
 </html>
